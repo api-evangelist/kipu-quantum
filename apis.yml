@@ -1,24 +1,108 @@
 aid: kipu-quantum
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kipu-quantum.png
 name: Kipu Quantum
-description: 'Kipu Quantum is a company surfaced as a portfolio company of hv-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: deep-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Kipu Quantum GmbH is a Berlin-based deep-tech company building application-specific,
+  hardware-efficient quantum algorithms and delivering them as a managed cloud platform.
+  Its flagship product, the Kipu Quantum Hub (hub.kipu-quantum.com), is an end-to-end
+  platform for industrial quantum computing: it provides unified access to 20+ quantum
+  backends (IBM Quantum, IonQ, IQM, QuEra, Rigetti, Pasqal, Azure Quantum), a visual
+  workflow designer for quantum-classical pipelines, an AI "matchmaker" (Tinkuq) that
+  translates a business problem into a solver configuration, and a Quantum Service Store
+  of pre-built solvers (Miray, Rimay, Iskay, HUK) targeting optimization, portfolio mix,
+  network routing, and classification. Developers automate runs and integrate via a
+  Python SDK, REST API, and CLI, authenticating with API keys and OAuth2/OIDC (Keycloak,
+  PlanQK realm). Founded and led by Prof. Dr. Enrique Solano and Dr. Tobias Grab. Backed
+  by HV Capital and surfaced into the API Evangelist network via VC-portfolio enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/kipu-quantum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - hv-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: portfolio-lead-enriched
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Deep Tech
-apis: []
+- Quantum Computing
+- Quantum
+- Artificial Intelligence
+- Optimization
+- Developer Platform
+- SDK
+- REST API
+- Germany
+apis:
+- name: Kipu Quantum Hub API
+  description: 'REST API and Python SDK for the Kipu Quantum Hub — submit quantum-classical
+    workflows, run pre-built quantum services against 20+ backends, and manage jobs.
+    Authenticated with API keys and OAuth2/OIDC (Keycloak). Full developer docs are
+    published with the v1 SDK release.'
+  humanURL: https://kipu-quantum.com/platform
+  baseURL: https://hub.kipu-quantum.com
+  tags:
+  - Quantum Computing
+  - REST API
+  - SDK
+  properties:
+  - type: Authentication
+    url: authentication/kipu-quantum-authentication.yml
+  - type: OAuthScopes
+    url: scopes/kipu-quantum-scopes.yml
+common:
+- type: DomainSecurity
+  url: security/kipu-quantum-domain-security.yml
+- type: Website
+  url: https://kipu-quantum.com
+- type: DeveloperPortal
+  url: https://hub.kipu-quantum.com
+- type: Documentation
+  url: https://kipu-quantum.com/platform
+- type: Pricing
+  url: https://kipu-quantum.com/pricing
+- type: SignUp
+  url: https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/registrations
+- type: Login
+  url: https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/auth
+- type: Blog
+  url: https://kipu-quantum.com/blog
+- type: SDKs
+  url: packages/kipu-quantum-packages.yml
+- type: Packages
+  url: packages/kipu-quantum-packages.yml
+- type: Authentication
+  url: authentication/kipu-quantum-authentication.yml
+- type: OAuthScopes
+  url: scopes/kipu-quantum-scopes.yml
+- type: OpenIDConnect
+  url: well-known/kipu-quantum-openid-configuration.json
+- type: WellKnown
+  url: well-known/kipu-quantum-well-known.yml
+- type: Conformance
+  url: conformance/kipu-quantum-conformance.yml
+- type: LLMsTxt
+  url: llms/kipu-quantum-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
