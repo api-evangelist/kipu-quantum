@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: derived
+source: https://login.hub.kipu-quantum.com/realms/planqk/.well-known/openid-configuration
+notes: >-
+  Cross-cutting standards conformance derived from the live OIDC discovery
+  document and the platform's documented auth model. No published compliance
+  program (SOC 2 / ISO 27001 / etc.) was found, so no `Compliance` pointer is
+  emitted.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: Keycloak provider exposes OAuth2 token endpoint with authorization_code and client_credentials grants.
+- id: oidc
+  conforms: true
+  evidence: RFC 8414 / OpenID Connect discovery document present with issuer, authorization/token/userinfo endpoints and jwks_uri.
+- id: rfc8414-oauth-metadata
+  conforms: true
+  evidence: Discovery document served at a .well-known metadata path.
+- id: rfc9457-problem-details
+  conforms: false
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on the primary domain.

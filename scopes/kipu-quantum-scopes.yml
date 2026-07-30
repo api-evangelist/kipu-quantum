@@ -1,0 +1,43 @@
+generated: '2026-07-19'
+method: searched
+source: https://login.hub.kipu-quantum.com/realms/planqk/.well-known/openid-configuration
+docs: https://login.hub.kipu-quantum.com/realms/planqk/.well-known/openid-configuration
+notes: >-
+  OAuth2/OIDC scopes advertised by the Kipu Quantum Hub Keycloak provider
+  (PlanQK realm) discovery document. These are the standard OIDC + Keycloak
+  client scopes; the Hub does not yet publish API-permission scopes (v1 SDK
+  docs pending). Captured from scopes_supported verbatim.
+schemes:
+- name: oidc
+  source: https://login.hub.kipu-quantum.com/realms/planqk/.well-known/openid-configuration
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/auth
+    tokenUrl: https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/token
+  - flow: clientCredentials
+    tokenUrl: https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication; returns an ID token.
+- scope: profile
+  description: Access to the user's basic profile claims.
+- scope: email
+  description: Access to the user's email address claim.
+- scope: address
+  description: Access to the user's address claim.
+- scope: phone
+  description: Access to the user's phone number claim.
+- scope: roles
+  description: Realm and client role claims for the user.
+- scope: offline_access
+  description: Issue a refresh token for long-lived / offline access.
+- scope: service_account
+  description: Service-account (client_credentials) machine-to-machine access.
+- scope: microprofile-jwt
+  description: MicroProfile JWT claims (groups, upn) for service authorization.
+- scope: web-origins
+  description: Allowed CORS web origins for the client.
+- scope: acr
+  description: Authentication Context Class Reference claim.
+- scope: basic
+  description: Basic OIDC claims scope.

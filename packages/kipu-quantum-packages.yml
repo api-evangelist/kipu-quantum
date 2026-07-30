@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/project/planqk-quantum/
+notes: >-
+  First-party Python SDK for the Kipu Quantum Hub, published to PyPI and
+  authored by Kipu Quantum GmbH. planqk-quantum (a Qiskit extension for PLANQK
+  backends) is deprecated in favour of qhub-quantum; the SDK import surface is
+  shown on the platform page as `from kipu_quantum import Hub` with full docs
+  slated for the v1 SDK release.
+packages:
+- language: python
+  registry: pypi
+  name: planqk-quantum
+  url: https://pypi.org/project/planqk-quantum/
+  install: pip install planqk-quantum
+  official: true
+  author: Kipu Quantum GmbH
+  license: Apache-2.0
+  status: deprecated
+  successor: qhub-quantum
+  description: SDK / Qiskit extension to interact with PLANQK (Kipu Quantum Hub) quantum backends.
+- language: python
+  registry: pypi
+  name: qhub-quantum
+  url: https://pypi.org/project/qhub-quantum/
+  install: pip install qhub-quantum
+  official: true
+  author: Kipu Quantum GmbH
+  description: >-
+    Successor SDK to planqk-quantum (named as the migration target in the
+    planqk-quantum deprecation notice). Referenced, not yet independently
+    verified on PyPI at capture time.

@@ -1,0 +1,21 @@
+# Kipu Quantum
+
+> Kipu Quantum GmbH is a Berlin-based deep-tech company building application-specific, hardware-efficient quantum algorithms and delivering them through the Kipu Quantum Hub — a managed cloud platform for industrial quantum computing with unified access to 20+ quantum backends, a visual workflow designer, an AI matchmaker (Tinkuq), and a Python SDK / REST API / CLI.
+
+## Company
+- [Website](https://kipu-quantum.com): Company homepage.
+- [Kipu Quantum Hub](https://hub.kipu-quantum.com): End-to-end platform for industrial quantum computing.
+- [Platform / SDK](https://kipu-quantum.com/platform): Product overview, SDK and REST API access.
+- [Pricing](https://kipu-quantum.com/pricing): Free, Plus, Team, and Enterprise plans.
+- [Blog](https://kipu-quantum.com/blog): Technical articles on quantum optimization, ML, and hardware co-design.
+- [Examples](https://kipu-quantum.com/examples): Application demonstrations (optimization, routing, classification).
+- [Imprint](https://kipu-quantum.com/imprint): Legal entity — Kipu Quantum GmbH, Berlin, Germany.
+
+## Developer
+- [Python SDK (planqk-quantum)](https://pypi.org/project/planqk-quantum/): First-party PyPI package by Kipu Quantum GmbH (successor: qhub-quantum).
+- [OpenID Connect discovery](https://login.hub.kipu-quantum.com/realms/planqk/.well-known/openid-configuration): Keycloak OIDC provider (PlanQK realm) fronting the Hub.
+- [Sign up](https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/registrations): Create a free Hub account.
+
+## Notes
+- Authentication: API key (SDK/REST) plus OAuth2/OIDC via Keycloak (authorization_code, client_credentials).
+- Full SDK / REST API reference is slated for publication with the v1 SDK release.

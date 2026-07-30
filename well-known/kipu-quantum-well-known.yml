@@ -1,0 +1,18 @@
+generated: '2026-07-19'
+method: searched
+source: https://login.hub.kipu-quantum.com/realms/planqk/.well-known/openid-configuration
+notes: >-
+  The Kipu Quantum Hub authenticates via a Keycloak OpenID Connect provider
+  (PlanQK realm) at login.hub.kipu-quantum.com. The realm exposes a standard
+  OIDC discovery document (saved verbatim). No security.txt or api-catalog was
+  found on the primary domain.
+hosts:
+- host: https://login.hub.kipu-quantum.com
+  documents:
+  - path: /realms/planqk/.well-known/openid-configuration
+    status: 200
+    file: kipu-quantum-openid-configuration.json
+- host: https://kipu-quantum.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404

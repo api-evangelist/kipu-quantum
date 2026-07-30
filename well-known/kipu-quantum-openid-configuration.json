@@ -1,0 +1,10 @@
+{
+  "issuer": "https://login.hub.kipu-quantum.com/realms/planqk",
+  "authorization_endpoint": "https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/auth",
+  "token_endpoint": "https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/token",
+  "userinfo_endpoint": "https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/userinfo",
+  "jwks_uri": "https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/certs",
+  "scopes_supported": ["openid", "email", "offline_access", "profile", "web-origins", "service_account", "microprofile-jwt", "acr", "phone", "roles", "address", "basic"],
+  "grant_types_supported": ["authorization_code", "client_credentials", "implicit", "password", "refresh_token", "urn:ietf:params:oauth:grant-type:device_code", "urn:ietf:params:oauth:grant-type:jwt-bearer", "urn:ietf:params:oauth:grant-type:token-exchange", "urn:ietf:params:oauth:grant-type:uma-ticket", "urn:openid:params:grant-type:ciba"],
+  "response_types_supported": ["code", "none", "id_token", "token", "id_token token", "code id_token", "code token", "code id_token token"]
+}
