@@ -1,0 +1,56 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://kipu-quantum.com/pricing
+sources:
+- https://kipu-quantum.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+  managed_tier: Plus
+published: true
+note: Tiered subscription page with pay-as-you-go hardware access (IBM, IonQ, IQM, QuEra, Rigetti) listed
+  without prices. Team tier price not yet published; Enterprise is custom/contact sales.
+plan_count: 5
+currency: EUR
+plans:
+- name: Free
+  price_text: €0
+  price: 0
+  currency: EUR
+  period: month
+  included_quota: Runtime Environment, Workflow Designer, 5€ Total Consumption, AI Matchmaker, Community
+    Forum, Learning Material
+- name: Plus
+  price_text: €50 per month
+  price: 50
+  currency: EUR
+  period: month
+  included_quota: Runtime Environment, 5 Workflow Designers, 20€/month Consumption, 30q Simulator, AI
+    Matchmaker, Community Forum, Learning Material
+  overage: Pay-as-you-go included in all tiers
+- name: Plus (yearly)
+  price_text: €500
+  price: 500
+  currency: EUR
+  period: year
+  included_quota: Yearly Price for Plus
+- name: Team
+  price_text: Available Soon
+  period: month
+  included_quota: Commercial Usage, Runtime Environment, 10 Workflow Designers, 100€/month Consumption,
+    30q Simulator, Weekly Cohort Meeting, Support Messenger
+- name: Enterprise
+  price_text: Custom
+  period: none
+  included_quota: Unlimited Workflow Designers, Custom Consumption Package, API Access, Custom Integrations,
+    Direct Support, Custom Consulting
+rate_limit_statements:
+- Your jobs will be queued until resources become available or the next billing cycle begins.
