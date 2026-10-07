@@ -75,6 +75,8 @@ apis:
   - type: OAuthScopes
     url: scopes/kipu-quantum-scopes.yml
 common:
+- type: Plans
+  url: plans/kipu-quantum-plans-pricing.yml
 - type: DomainSecurity
   url: security/kipu-quantum-domain-security.yml
 - type: Website
