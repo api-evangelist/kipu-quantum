@@ -54,3 +54,47 @@ plans:
     Direct Support, Custom Consulting
 rate_limit_statements:
 - Your jobs will be queued until resources become available or the next billing cycle begins.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - hybrid
+  - subscription
+  units: []
+  plans:
+  - name: Free
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Plus
+    access: other
+    model: hybrid
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Plus (yearly)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - year
+  - name: Team
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
