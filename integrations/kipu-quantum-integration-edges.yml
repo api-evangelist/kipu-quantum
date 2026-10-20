@@ -1,0 +1,23 @@
+edges:
+- partner_name: IBM Quantum (Qiskit Functions catalog)
+  partner: ibm-quantum
+  partner_match: mirror
+  mirror_match: domain
+  type: docs
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  evidence: https://quantum.cloud.ibm.com/docs/en/guides/kipu-optimization
+  mirror_of: ibm-quantum/integrations/ibm-quantum-integration-edges.yml
+  apps:
+  - Iskay Quantum Optimizer
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: Qiskit Function (IBM Quantum Platform)
+generated: '2026-10-20'
+method: searched
+source:
+- ibm-quantum/integrations/ibm-quantum-integration-edges.yml
+checked:
+- ibm-quantum/integrations/ibm-quantum-integration-edges.yml
