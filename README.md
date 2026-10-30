@@ -64,6 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Kipu Quantum is a company surfaced as a portfolio company of hv-capital and added to the API Evangelist network as a stub for enrichment. Sector: deep-tech. This profile is a lead awaiting the enrichment pipeline.
+Kipu Quantum GmbH is a Berlin-based deep-tech company building application-specific, hardware-efficient quantum algorithms and delivering them as a managed cloud platform. Its flagship product, the Kipu Quantum Hub (hub.kipu-quantum.com), is an end-to-end platform for industrial quantum computing: it provides unified access to 20+ quantum backends (IBM Quantum, IonQ, IQM, QuEra, Rigetti, Pasqal, Azure Quantum), a visual workflow designer for quantum-classical pipelines, an AI "matchmaker" (Tinkuq) that translates a business problem into a solver configuration, and a Quantum Service Store of pre-built solvers (Miray, Rimay, Iskay, HUK) targeting optimization, portfolio mix, network routing, and classification. Developers automate runs and integrate via a Python SDK, REST API, and CLI, authenticating with API keys and OAuth2/OIDC (Keycloak, PlanQK realm). Founded and led by Prof. Dr. Enrique Solano and Dr. Tobias Grab. Backed by HV Capital and surfaced into the API Evangelist network via VC-portfolio enrichment.
 
-Backed by: hv-capital
+**Areas:** Company · Deep Tech · Quantum Computing · Quantum · Artificial Intelligence · Optimization · Developer Platform · SDK · REST API · Germany
+
+## Kipu Quantum on APIs.io
+
+Everything profiled for Kipu Quantum is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kipu-quantum/](https://apis.io/providers/kipu-quantum/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Kipu Quantum Hub API](https://apis.io/apis/kipu-quantum/kipu-quantum-hub-api/) — REST API and Python SDK for the Kipu Quantum Hub — submit quantum-classical workflows, run pre-built quantum services against 20+ backends, and manage jobs.…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kipu Quantum Authentication](https://apis.io/security/kipu-quantum/kipu-quantum-authentication/)
+- [Kipu Quantum Domain Security](https://apis.io/security/kipu-quantum/kipu-quantum-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Kipu Quantum Scopes](https://apis.io/scopes/kipu-quantum/kipu-quantum-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Kipu Quantum Plans Pricing](https://apis.io/plans/kipu-quantum/kipu-quantum-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://kipu-quantum.com)
+- [Documentation](https://kipu-quantum.com/platform)
+- [Pricing](https://kipu-quantum.com/pricing)
+- [Sign up](https://login.hub.kipu-quantum.com/realms/planqk/protocol/openid-connect/registrations)
+- [Blog](https://kipu-quantum.com/blog)
+
+## API Evangelist rating
+
+**Kin Score 25.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 31.0 |
+| Access clarity | 48.7 |
+
+**Agent readiness 10.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kipu-quantum/](https://apis.io/providers/kipu-quantum/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kipu Quantum: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kipu-quantum/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
